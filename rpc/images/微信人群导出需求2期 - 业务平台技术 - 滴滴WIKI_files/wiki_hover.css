@@ -1,0 +1,87 @@
+
+.wiki-foot-tip {
+    position: fixed;
+    right: -20px;
+    bottom: 120px;
+    height: 80px;
+    z-index: 99;
+    transition: 1s;
+    transform: translateX(20px)
+}
+
+.wiki-foot-tip:hover {
+    transform: translateX(0)
+}
+
+.wiki-foot-tip .item {
+    width: 55px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.wiki-foot-tip .item>img:first-child {
+    width: 100%
+}
+
+.wiki-foot-tip .item:first-child,.wiki-foot-tip .item:last-child {
+    margin: 10px 0 0 15px
+}
+
+.wiki-foot-tip .item:nth-child(2),.wiki-foot-tip .item:nth-child(3) {
+    margin: 2px 15px 0 0
+}
+
+.wiki-foot-tip .item .qrcode {
+    display: none;
+    width: 250px;
+    border: 1px solid #eee;
+    position: relative;
+    right: 250px;
+    bottom: 300px
+}
+
+.wiki-foot-tip .mobile-qrcode {
+    display: none;
+    width: 600px;
+    border: 1px solid #eee;
+    position: relative;
+    right: 600px;
+    bottom: 450px
+}
+
+.wiki-foot-tip .item:hover .mobile-qrcode,.wiki-foot-tip .item:hover .qrcode {
+    display: block
+}
+
+.wiki-foot-tip .download {
+    width: 250px;
+    height: 90px;
+    border: 1px solid #eee;
+    position: relative;
+    right: 250px;
+    bottom: 94px;
+    background-color: #fff;
+    display: none
+}
+
+.wiki-foot-tip .download a {
+    display: inline-block;
+    width: 50%;
+    color: #333;
+    text-align: center;
+    margin-top: 20px
+}
+
+.wiki-foot-tip .download a:hover {
+    color: #55a4ff
+}
+
+.wiki-foot-tip .download img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px
+}
+
+.wiki-foot-tip .item:nth-child(4):hover .download {
+    display: block
+}
